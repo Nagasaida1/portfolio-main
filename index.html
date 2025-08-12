@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <!-- Professional Favicon Package -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/neural-icon-professional.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Velpula Naga Saida - Full Stack Developer Portfolio. Specializing in Python, Django, React.js, and modern web technologies." />
+    <meta name="keywords" content="Full Stack Developer, Python, Django, React, Web Developer, Portfolio" />
+    <meta name="author" content="Velpula Naga Saida" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Velpula Naga Saida - Full Stack Developer" />
+    <meta property="og:description" content="Passionate full stack developer from Hyderabad, India. Building scalable web applications with Python, Django, React.js, and modern technologies." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nagasaida1.github.io/portfolio" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <title> Velpula Naga Saida | Full Stack Developer Portfolio</title>
+    
+    <style>
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0a0a0f;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(135deg, #0f3460, #00d4ff);
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(135deg, #00d4ff, #00ff88);
+      }
+      
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      /* Loading animation */
+      .loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0a0a0f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease-out;
+      }
+      
+      .neural-loader {
+        width: 60px;
+        height: 60px;
+        border: 3px solid rgba(0, 212, 255, 0.1);
+        border-top: 3px solid #00d4ff;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body class="bg-neural-dark text-white font-tech">
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+      <div class="neural-loader"></div>
+    </div>
+    
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    
+    <script>
+      // Hide loading screen when page is loaded
+      window.addEventListener('load', () => {
+        const loadingScreen = document.getElementById('loading-screen');
+        setTimeout(() => {
+          loadingScreen.style.opacity = '0';
+          setTimeout(() => {
+            loadingScreen.style.display = 'none';
+          }, 500);
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>

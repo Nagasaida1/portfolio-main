@@ -1,0 +1,41 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="projectGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f3460;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:0.8" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00d4ff" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#projectGradient)"/>
+  <rect width="600" height="400" fill="url(#grid)"/>
+  
+  <!-- Code Icon -->
+  <g transform="translate(250, 150)">
+    <rect x="0" y="0" width="100" height="80" rx="8" fill="none" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
+    <circle cx="15" cy="15" r="3" fill="#00ff88"/>
+    <circle cx="30" cy="15" r="3" fill="#ffff00"/>
+    <circle cx="45" cy="15" r="3" fill="#ff4757"/>
+    
+    <!-- Code lines -->
+    <rect x="10" y="30" width="60" height="2" fill="#00d4ff" opacity="0.6"/>
+    <rect x="10" y="40" width="45" height="2" fill="#00ff88" opacity="0.6"/>
+    <rect x="10" y="50" width="70" height="2" fill="#00d4ff" opacity="0.6"/>
+    <rect x="10" y="60" width="35" height="2" fill="#00ff88" opacity="0.6"/>
+  </g>
+  
+  <!-- Project Text -->
+  <text x="300" y="280" text-anchor="middle" fill="#00d4ff" font-family="Inter, sans-serif" font-size="24" font-weight="600">
+    Project Showcase
+  </text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="100" r="30" fill="none" stroke="#00ff88" stroke-width="1" opacity="0.4"/>
+  <circle cx="500" cy="320" r="25" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.4"/>
+  <polygon points="50,350 70,320 90,350" fill="none" stroke="#00ff88" stroke-width="1" opacity="0.4"/>
+  <polygon points="520,80 540,50 560,80" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.4"/>
+</svg>

@@ -1,0 +1,35 @@
+{
+  "name": "Velpula Naga Saida - Full Stack Developer",
+  "short_name": "Naga Saida Portfolio",
+  "description": "Professional portfolio of Velpula Naga Saida - Full Stack Developer specializing in Python, Django, React.js, and modern web technologies.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#00d4ff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/neural-icon-professional.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "portfolio"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "screenshots": [
+    {
+      "src": "/profile.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "platform": "wide"
+    }
+  ]
+}
